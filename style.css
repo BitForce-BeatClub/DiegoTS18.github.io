@@ -99,3 +99,90 @@ header a:hover{
     color: #D90429;
     cursor: pointer;
 }
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+#hero h1{
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    font-size: 6rem;
+}
+/*---About Us--*/
+#About_Us .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#About_Us img{
+    -moz-transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transform:scale(0.7);
+}
+
+/*---Our Team--*/
+#Our_Team .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#Our_Team img{
+    border-radius: 10rem;
+}
+
+/*---Services--*/
+#Services .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#Services img{
+    border-radius: 10rem;
+}
+#Services .container .phrase h2{
+    font-family: 'Bebas Neue';
+    color: #D90429;
+    font-weight: 100;
+}
+/*---Suscriptions--*/
+#Suscriptions .container{
+    padding: 100px 12px;
+    text-align: center;
+    align-items: center;
+}
+.card p{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin: 2rem;
+}
+.card{
+    background-color: #242423;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 16px;
+    height: 50rem;
+}
+.card h3{
+    color: #E8EDE0;
+    font-size: 3.2rem;
+}
+/*----------Gallery*---------*/
+#Gallery .container{
+    padding: 100px 72px;
+    text-align: center;
+    align-items: center;
+}
