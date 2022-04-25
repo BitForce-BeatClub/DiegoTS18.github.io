@@ -230,6 +230,9 @@ header a:hover{
     border-radius: 0.3rem;
     margin-top: 2rem;
 }
+footer .container{
+    text-align: center;
+}
 @media (min-width: 958px){
     header .container{
         flex-direction: row;
