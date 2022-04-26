@@ -1,2 +1,2 @@
-# DiegoTS18.github.io
+# BeatClub by BitForce
 Beat Club Lading Page
