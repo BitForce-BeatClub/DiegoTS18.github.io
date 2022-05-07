@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -282,9 +280,7 @@ footer .container{
         width: 550px;
         height: 600px;
     }
-    .card button{
-        margin-top: 8rem;
-    }
+
     /*-------Contact us---*/
     /*--------Contact Us*----*/
     #Contact_Us .container .containerCU {
