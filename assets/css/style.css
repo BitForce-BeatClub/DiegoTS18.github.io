@@ -1,0 +1,434 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0b090a;
+    font-family: 'Poppins';
+    margin: 0;
+    color: white;
+}
+h1{font-size: 4rem;}
+h2{font-size: 3rem;}
+ul{ list-style: none;}
+li {font-size: 1.25em;}
+.title{
+    color: #F5CB5C;
+    font-size: 3rem;
+    font-weight: 499;
+    margin: 0;
+    margin-left: 0rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+#hero a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #D90429;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+#hero h1{
+    font-size: 4rem;
+    text-align: left;
+}
+#Suscriptions button{
+    font-size: 1.5rem;
+    background-color: #E8EDE0;
+    font-weight: bold;
+    padding: 0.3rem 6rem;
+    border: 0 solid #E8EDE0;
+    box-shadow: none;
+    border-radius: 0.3rem;
+}
+#Suscriptions button:hover{
+    background-color: #aeb1a9;
+    cursor: pointer;
+}
+
+#hero a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #A4161A;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header .container{
+    max-width: none;
+}
+#About_Us, #Our_Team, #Services, #Suscriptions, #Gallery, #Contact_Us{
+    background-color: #161A1D;
+    margin: 2rem 4rem;
+}
+header{
+    background-color: #0D1B29;
+}
+header .logo{
+    margin: 0;
+    -moz-transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    color: #D90429;
+    cursor: pointer;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+#hero h1{
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    font-size: 6rem;
+}
+/*---About Us--*/
+#About_Us .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#About_Us img{
+    -moz-transform:scale(0.7);
+    -webkit-transform:scale(0.7);
+    transform:scale(0.7);
+}
+
+/*---Our Team--*/
+#Our_Team .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#Our_Team img{
+    border-radius: 10rem;
+}
+
+/*---Services--*/
+#Services .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#Services img{
+    border-radius: 10rem;
+}
+#Services .container .phrase h2{
+    font-family: 'Bebas Neue';
+    color: #D90429;
+    font-weight: 100;
+}
+/*---Suscriptions--*/
+#Suscriptions .container{
+    padding: 100px 12px;
+    text-align: center;
+    align-items: center;
+}
+.card p{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    margin: 2rem;
+}
+.card{
+    background-color: #242423;
+    padding: 50px 0;
+    margin: 20px;
+    border-radius: 16px;
+    height: 50rem;
+}
+.card h3{
+    color: #E8EDE0;
+    font-size: 3.2rem;
+}
+/*----------Gallery*---------*/
+#Gallery .container{
+    padding: 100px 72px;
+    text-align: center;
+    align-items: center;
+}
+/*----------CONTACT US-----*/
+#Contact_Us{
+    padding: 100px 12px;
+}
+#Contact_Us .container{
+    text-align: center;
+    align-items: center;
+    padding: 100px 12px;
+}
+#Contact_Us .container .info label{
+    display: block;
+}
+#Contact_Us .container .comment label{
+    display: block;
+}
+#Contact_Us .container .right ul{
+    list-style-type: none;
+    margin-right: 0;
+    color: white;
+}
+#Contact_Us .container .right ul li a{
+    color: white;
+    text-decoration: none;
+}
+#Contact_Us .container .left .up .info input{
+    width: 10cm;
+    height: 1cm;
+    border-radius: 0.5rem;
+}
+#Contact_Us .container .left .up .comment input{
+    width: 10cm;
+    height: 3cm;
+    border-radius: 0.5rem;
+}
+#Contact_Us .container .left button{
+    font-size: 1rem;
+    background-color: #E8EDE0;
+    font-weight: bold;
+    padding: 0.3rem 3rem;
+    border: 0 solid #E8EDE0;
+    box-shadow: none;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+}
+footer .container{
+    text-align: center;
+}
+@media (min-width: 958px){
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 ;
+        padding: 0;
+        margin-right: 3rem;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    .title{
+        display: flex;
+        justify-content: left;
+    }
+    /*---About us----*/
+    #About_Us .logoUX{
+        margin: 0;
+        /*padding: 0;*/
+    }
+    #About_Us .AU_container{
+        display: flex;
+    }
+    /*---Our Team---*/
+    #Our_Team .team .up{
+        display: flex;
+        justify-content: space-between;
+    }
+    #Our_Team .team .down{
+        display: flex;
+        padding: 0 18vh;
+        justify-content: space-between;
+    }
+    /*-------Suscriptions------*/
+    #Suscriptions p{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+    #Suscriptions .plans{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2vh;
+    }
+    .card{
+        width: 550px;
+        height: 600px;
+    }
+
+    /*-------Contact us---*/
+    /*--------Contact Us*----*/
+    #Contact_Us .container .containerCU {
+        display: flex;
+        justify-content: space-between;
+    }
+    #Contact_Us .container .info label{
+        display: block;
+        padding-bottom: 0.5rem ;
+    }
+    #Contact_Us .container .comment label{
+        display: block;
+        padding-bottom: 0;
+    }
+    #Contact_Us .container .left .up{
+        display: flex;
+    }
+    #Contact_Us .container .left .up .info input{
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    #Contact_Us .container .left .up .info {
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-right: 2rem;
+    }
+    #Contact_Us .container .left .up .comment label{
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+    }
+    #Contact_Us .container .left .up .comment input{
+        width: 10cm;
+        height: 3.15cm;
+        border-radius: 0.5rem;
+        
+    }
+    #Contact_Us .container button{
+        font-size: 1rem;
+        background-color: #E8EDE0;
+        font-weight: bold;
+        padding: 0.3rem 3rem;
+        border: 0 solid #E8EDE0;
+        box-shadow: none;
+        border-radius: 0.3rem;
+        margin: 0 20rem;
+        margin-top: 3rem;
+    }
+    #Contact_Us .container .containerCU{
+        display: block;
+    }
+    #Contact_Us .container .containerCU .right{
+        margin-top: 3rem;
+    }
+}
+@media  (min-width:1152px){
+    /*--------Contact Us*----*/
+    #Contact_Us .container .containerCU {
+        display: flex;
+        justify-content: space-between;
+    }
+    #Contact_Us .container .info label{
+        display: block;
+        padding-bottom: 0.5rem ;
+    }
+    #Contact_Us .container .comment label{
+        display: block;
+        padding-bottom: 0;
+    }
+    #Contact_Us .container .left .up{
+        display: flex;
+    }
+    #Contact_Us .container .left .up .info input{
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+    #Contact_Us .container .left .up .info {
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-right: 2rem;
+    }
+    #Contact_Us .container .left .up .comment label{
+        width: 10cm;
+        height: 1cm;
+        border-radius: 0.5rem;
+        text-align: left;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+    }
+    #Contact_Us .container .left .up .comment input{
+        width: 10cm;
+        height: 3.15cm;
+        border-radius: 0.5rem;
+        
+    }
+    #Contact_Us .container button{
+        font-size: 1rem;
+        background-color: #E8EDE0;
+        font-weight: bold;
+        padding: 0.3rem 3rem;
+        border: 0 solid #E8EDE0;
+        box-shadow: none;
+        border-radius: 0.3rem;
+        margin: 0 20rem;
+        margin-top: 3rem;
+    }
+}
+@media (min-width:1090px){
+    /*-----Services*-------*/
+    #Services .Info_group{
+        display: flex;
+        justify-content: space-between;
+    }
+    #Services .container .phrase h2{
+        font-family: 'Bebas Neue';
+        color: #D90429;
+        font-weight: 100;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+    #Services .container .phrase p{
+        font-family: 'Bebas Neue';
+        font-weight: 100;
+        font-size: 25px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+}
+@media  (min-width:1515px){
+        /*--------GALLERY*---*/
+    #Gallery .photos {
+        display: flex;
+    }
+}
+
+    
