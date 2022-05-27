@@ -242,9 +242,16 @@ footer .container{
     color: #00a1ff; 
 }
 
+.languageChanger{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
 .check{
     position: relative;
     width: 50px;
+    margin: 0 5px 0 5px;
 }
 
 .check:before{
