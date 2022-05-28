@@ -9,7 +9,7 @@ function idioma(){
         document.getElementsByClassName('en').style= "color: #333";
     }
     else{
-        location.href="../../index.html"
+        location.href="index.html"
         document.getElementsByClassName('en').style = "color: #00a1ff";
         document.getElementsByClassName('es').style= "color: #333";
         
