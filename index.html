@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeatClub</title>
-    <link rel="stylesheet" href="assets/css/style.css"></link>
-    <link rel="shortcut icon" href="assets/img/icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-    <header>
-        <div class="container">
-            <img src="assets/img/logo.png" class="logo" height="80px">
-            <nav>
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>BeatClub</title>
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon/favicon.ico"/>
+
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <img class="imgLogo" src="assets/img/logoBeatClub2.png">
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About Us
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+
+                        <i class='bx bx-toggle-left change-theme' id="theme-button"></i>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+
                 <div class="languageChanger">
                     <span class="en">English</span>
                     <input type="checkbox" class="check">
@@ -24,185 +54,433 @@
                 </div>
 
 
-                <a href="#hero">Home</a>
-                <a href="#About_Us">About Us</a>
-                <a href="#Our_Team">Our Team</a>
-                <a href="#Services">Services</a>
-                <a href="#Suscriptions">Subscriptions</a>
-                <a href="#Contact_Us">Contact</a>
+
+                <i class='bx bx-search'></i>
+
+                <a href="https://beatclub-45762.web.app/" class="button button__header"id="myBtn2">Log In</a>
+                
             </nav>
-        </div>
-    </header>
-    <section id="hero">
-        <h1>the <span style="color: #D90429;">world’s #1</span>  platform for<br> music production</h1>
-        <a href="https://beatclub-45762.web.app/">Try it now</a>
-    </section>
-    <section id="About_Us"> <!--El container nos sirve para hacerlo responsive-->
-        <div class="container">
-            <h1 class="title">About Us</h1>
-            <div class="AU_container">
-                <div class="logoUX">
-                    <img src="assets/img/background.png" width="550vh">
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+
+                    <img src="assets/img/dj-music.png" class="svg__img svg__color home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">The <span style="color: #D90429;">world’s #1</span> platform for music production</h1>
+                        <a href="https://beatclub-45762.web.app/" class="button" id="myBtn">Register</a>
+
+                    </div>   
                 </div>
-                <h3>Beat Club is an application desired and developed by Beatmusic. The main objective of our application is to provide a variety of musical projects for different artists, those that require financial financial and/or advice on their project idea. The most important thing we do is work with new companies in your IDES. In Beatmusic we are efficient to discover the direction in which a small idea must be developed, or the starting point to attack a vague and big idea.</p>    
-            </div>
-        </div>
-    </section>
-    <section id="Our_Team">
-        <div class="container">
-            <h1 class="title">Our Team</h1>
-            <div class="team">
-                <div class="up">
-                    <div class="profile">
-                        <img src="assets/img/adrian_.png">
-                        <p>Adrian Manuel Esqueiros Cabrera</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                    <div class="profile">
-                        <img src="assets/img/enrique_.png">
-                        <p>Enrique Daniel Postigo Tuesta</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                    <div class="profile">
-                        <img src="assets/img/josmar.png">
-                        <p>Josmar Vela Sarazú</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-                <div class="down">
-                    <div class="profile">
-                        <img src="assets/img/Jose.png">
-                        <p>Jose Cayllahua</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                    <div class="profile">
-                        <img src="assets/img/mathyufoto.png">
-                        <p>Mathyu Cardozo</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                    <div class="profile">
-                        <img src="assets/img/Aldair.png">
-                        <p>Aldair Chuman</p>
-                        <p>Software Engineering Student</p>
-                    </div>
-                </div>
-            </div>
+            </section>
+
+            <section class="videoabouttheproduct section container">
+                <h2 class="section__title">About the product</h2>
             
-        </div>
-    </section>
- 
-    <section id="Services">
-        <div class="container">
-            <h1 class="title" >Services </h1>
-            <h3  >BeatClub goal is to be the best global marketplace that connects the music creator community with record labels, music publishers, brands, content creators, and independent artists.
-                Beatclub is also building powerful business tools, creating educational content, and sourcing industry opportunities to empower music creatives at every level.
-                Join us and collaborate with others Musicians and Producers like you, we want to provide the best services for our musicians&producer community.</h3>
-                <h3 class="title">Our content creators </h3>
-            <div class="Info_group">
-                    <div class="service_info">
-                        <img src="assets/img/tainy.png"w>
-                        <p>Tainy</p>
-                        <p>BeatClub</p>
-                        <p>Collaborate with your favorite <br> Music Producer.</p>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PBEuZDoCWkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            
+            
+
+            <!--=============== ABOUT ===============-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <div class="about__data">
+                        <h2 class="section__title-center">About Us</h2>
+                        <p class="about__description">Beat Club is an application desired and developed by Beatmusic. The main objective of our application is to provide a variety of musical projects for different artists, those that require financial financial and/or advice on their project idea. The most important thing we do is work with new companies in your IDES. In Beatmusic we are efficient to discover the direction in which a small idea must be developed, or the starting point to attack a vague and big idea. 🎧 
+                        </p>
                     </div>
-                    <div class="service_info">
-                        <img src="assets/img/billie.png">
-                        <p>Billie Eilish</p>
-                        <p>BeatClub</p>
-                        <p>Collaborate with your favorite<br> Artist.</p>
-                    </div>
-                    <div class="service_info">
-                        <img src="assets/img/studio.png">
-                        <p>Collaborate in real time with your favorite<br> product and/or musician, distribute your tracks<br> on the main digital audio platforms.</p>
-                    </div>
-            </div>
-            <section id="Suscriptions">
-                <div class="container">
-                    <h1 class="title">Suscriptions </h1>
-                    <p>Subscribe to obtain benefits!<br>Whether you are a music producer or a an artist, we have a plan for you. Check out our offers!</p>
-                    <div class="plans">
-                        <div class="card">
-                            <h3>Free  $0</h3>
-                            <p>For sellers just starting their music business</p>
-                            <p>Up to 10 tracks</p>
-                            <p>Upload Track Stems</p>
-                            <p>Instant Payments</p>
-                            <p>Accept PayPal payments</p>
-                            <p>Accept Stripe payments</p>
-                            <button>More info</button>
+                    <img class="svg__img svg__color about__img" src="./assets/img/cantante.png">
+                
+                    
+                </div>
+            </section>
+
+
+            <section class="videoabouttheproduct section container">
+                <h2 class="section__title">About the team</h2>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PBEuZDoCWkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+
+            <!-- ============= TEAM SECTION ============ -->
+
+            <section class="team section container">
+                <br>
+                <h1 class="team__title">Our TEAM 🫂</h1>
+                <br>
+                <div class="team_container">
+                
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/mathyufoto.png" alt="mathyu_cardozo">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Mathyu Cardozo</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="card">
-                            <h3>Musician $10</h3>
-                            <p>For sellers who want to grow their business and have access to selected features.</p>
-                            <p>All free feature plus:</p> 
-                            <p>Unlimited tracks</p>
-                            <p>20 Monthly Private Messages</p>
-                            <p>Sell Sound Kits</p>
-                            <p>Sell Custom Services</p>
-                            <button>More info</button>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/Aldair.jpg" alt="aldair_chuman">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Aldair Chuman</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="card">
-                            <h3>Producer Pro  $20</h3>
-                            <p>For sellers who want to scale their business quickly, have a customized storefront, and complete features.</p>
-                            <p>All marketplace features plus:</p>
-                            <p>Unlimited tracks</p>
-                            <p>20 Monthly Private Messages</p>
-                            <p>Sell Sound Kits</p>                  
-                            <p>Sell Custom Services</p>
-                            <button>More info</button>
+                    </div>
+                  
+
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/adrian_.png" alt="Adrian Esqueiros">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Adrian Esqueiros</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/enrique_.png" alt="Enrique_Postigo">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Enrique Postigo</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/josmar.png" alt="Josmar_Vela">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Josmar Vela</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="assets/img/Jose.png" alt="Jose_Cayllahua">
+                            </div>
+                            <div class="contentBx">
+                                <h4>Jose Cayllahua</h4>
+                                <h5>Software Engineering Student</h5>
+                            </div>
+                            <div class="sci">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+                </div>
+            </section>
+            
+
+
+            <!--=============== SERVICES ===============-->
+            <section class="services section container" id="services">
+                <h2 class="section__title">Our services</h2>
+                <p>BeatClub goal is to be the best global marketplace that connects the music creator community with record labels, music publishers, brands, content creators, and independent artists. Beatclub is also building powerful business tools, creating educational content, and sourcing industry opportunities to empower music creatives at every level. Join us and collaborate with others Musicians and Producers like you, we want to provide the best services for our musicians&producer community.</p>
+                <h2 class="section__title">Our content creators</h2>
+                <div class="services__container grid">
+                    <div class="services__data uno">
+                        <h3 class="services__subtitle">Tainy</h3>
+
+                        <img src="assets/img/tainy.png" class="svg__color services__img">
+
+                        <p class="services__description">Collaborate with your favorite Music Producer.</p>
+                        <div>
+                            <a href="#" class="button button-link">Learn more</a>
+                        </div>
+                    </div>
+
+                    <div class="services__data">
+                        <h3 class="services__subtitle">Billie Eilish</h3>
+                       
+                        <img src="assets/img/billie.png" class="svg__color services__img">
+
+                        <p class="services__description">Collaborate with your favorite Artist.</p>
+                        <div>
+                            <a href="#" class="button button-link">Learn more</a>
+                        </div>
+                    </div>
+
+                    <div class="services__data">
+                        <h3 class="services__subtitle">Collaborate</h3>
+                      
+                        <img src="assets/img/studio.png" class="svg__color services__img">
+
+                        <p class="services__description">Collaborate in real time with your favorite product and/or musician, distribute your tracks on the main digital audio platforms.</p>
+                        <div>
+                            <a href="#" class="button button-link">Learn more</a>
                         </div>
                     </div>
                 </div>
-            <div class="phrase">
-                <h2>Realease your music to all major digital music<br>platforms</h2>
-                <p>keep  <span style="color: #F5CB5C;">  100% of the earning  </span>  we collect for you</p>
-            </div>
-        </div>     
-    </section>
-    <section id="Contact_Us">
-        <div class="container">
-            <h1 class="title">Contact Us</h1>
-            <div class="containerCU">
-                <div class="left">
-                    <div class="up">
-                        <div class="info">
-                            <label for="name">Your name</label>
-                            <input id="name" name="name" placeholder="Type your name">
-                            <label for="email">Your email</label>
-                            <input id="email" name="email" placeholder="Type your email">
+            </section>
+
+            <!-- PRICES -->
+            <section class="prices section container">
+                <div class="card__container grid">
+                    <!--==================== CARD 1 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>0
+                            </div>
+                            <span class="card__pricing-month">month</span>
                         </div>
-                        <div class="comment">
-                            <label for="message">Write your message</label>
-                            <input id="message" name="message" placeholder="">
+        
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/free-coin.png" class="card__header-img">
+                            </div>
+                            
+                            <span class="card__header-subtitle">For sellers just starting their music business</span>
+                            <h1 class="card__header-title">Free</h1>
+                        </header>
+                        
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Up to 10 tracks</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Upload Track Stems</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Instant Payments</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Accept PayPal payments</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Accept Stripe payments</p>
+                            </li>
+                        </ul>
+        
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+        
+                    <!--==================== CARD 2 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>10
+                            </div>
+                            <span class="card__pricing-month">month</span>
                         </div>
-                    </div>
-                    <div class="down">
-                        <button>send</button>
-                    </div>                  
+        
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/pro-coin.png" class="card__header-img">
+                            </div>
+        
+                            <span class="card__header-subtitle">For sellers who want to grow their business and have access to selected features.</span>
+                            <h1 class="card__header-title">Musician</h1>
+                        </header>
+                        
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">All free feature plus:</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlimited tracks</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">20 Monthly Private Messages</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Sell Sound Kits</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Sell Custom Services</p>
+                            </li>
+                        </ul>
+        
+                        <button class="card__button">Choose this plan</button>
+                    </article>
+        
+                    <!--==================== CARD 3 ====================-->
+                    <article class="card__content grid">
+                        <div class="card__pricing">
+                            <div class="card__pricing-number">
+                                <span class="card__pricing-symbol">$</span>20
+                            </div>
+                            <span class="card__pricing-month">month</span>
+                        </div>
+        
+                        <header class="card__header">
+                            <div class="card__header-circle grid">
+                                <img src="assets/img/enterprise-coin.png" class="card__header-img">
+                            </div>
+        
+                            <span class="card__header-subtitle">For sellers who want to scale their business quickly, have a customized storefront, and complete features.</span>
+                            <h1 class="card__header-title">Producer Pro</h1>
+                        </header>
+                        
+                        <ul class="card__list grid">
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">All marketplace features plus:</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Unlimited tracks</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">20 Monthly Private Messages</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Sell Sound Kits</p>
+                            </li>
+                            <li class="card__list-item">
+                                <i class="uil uil-check card__list-icon"></i>
+                                <p class="card__list-description">Sell Custom Services</p>
+                            </li>
+                        </ul>
+        
+                        <button class="card__button">Choose this plan</button>
+                    </article>
                 </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#">BeatClub</a></li>
-                        <li><a href="#"></a>@BeatClub</a></li>
-                        <li><a href="#"></a>BeatClub</a></li>
-                        <li><a href="#">BeatClub</a></li>
+            </section>
+
+            <!--=============== CONTACT US ===============-->
+            <section class="contact section container" id="contact">
+                <div class="contact__container grid">
+                    <div class="contact__content">
+                        <h2 class="section__title-center">Contact</h2>
+                        <p class="contact__description">You can contact us from here, you can send us an E-Mail, call us or visit our service center.</p>
+                    </div>
+
+                    <ul class="contact__content grid">
+                        <li class="contact__address">Telephone: <span class="contact__information">+51993222666</span></li>
+                        <li class="contact__address">Email:  <span class="contact__information">soporte@beatclub.com</span></li>
+                        <li class="contact__address">Location: <span class="contact__information">Lima - Peru</span></li>
+                    </ul>
+
+                    <div class="contact__content boton">
+                        <a href="#" class="button">Contact</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Music</a>
+                    <p class="footer__description">The world’s #1 platform for music production</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our services</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Music</a></li>
+                        <li><a href="#" class="footer__link">Djs</a></li>
+                        <li><a href="#" class="footer__link">Producers</a></li>
+
                     </ul>
                 </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Blog</a></li>
+                        <li><a href="#" class="footer__link">Mision</a></li>
+                        <li><a href="#" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Comunity</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Support</a></li>
+                        <li><a href="#" class="footer__link">Q&A</a></li>
+                        <li><a href="#" class="footer__link">Customer service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer__social-link"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>©BeatClub 2022</p>
-        </div>
-    </footer>
 
+            <p class="footer__copy">&#169; BeatClub. All rights reserved</p>
+        </footer>
 
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
 
+                <!--========== SCROLL REVEAL ==========-->
+                <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/js/main.js"></script>
-
-
-</body>
+        <!--=============== MAIN JS ===============-->
+        
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
